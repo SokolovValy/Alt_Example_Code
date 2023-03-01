@@ -7,7 +7,7 @@ Group: Other
 License: GPLv3+
 URL: https://www.example.com/%{name}
 
-Source0: https://www.example.com/%{name}/releases/%{name}-%{version}.tar.gz
+Source0: %{name}-%{version}.tar
 
 BuildRequires: gcc
 BuildRequires: make
@@ -22,7 +22,7 @@ The long-tail description for our Hello World Example implemented in C.
 %make
 
 %install
-%make_install
+%make_install_std
 
 %files
 %doc LICENSE
