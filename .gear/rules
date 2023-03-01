@@ -1,2 +1,2 @@
-tar: .
+tar: . name=@name@-@version@ base=@name@-@version@
 spec: .gear/cello.spec

@@ -8,7 +8,6 @@ License: GPLv3+
 URL: https://www.example.com/%{name}
 
 Source0: https://www.example.com/%{name}/releases/%{name}-%{version}.tar.gz
-Patch0: cello-output-first-patch.patch
 
 BuildRequires: gcc
 BuildRequires: make
@@ -18,13 +17,12 @@ The long-tail description for our Hello World Example implemented in C.
 
 %prep
 %setup -q
-%patch0
 
 %build
 %make
 
 %install
-%make_install_std
+%make_install
 
 %files
 %doc LICENSE
